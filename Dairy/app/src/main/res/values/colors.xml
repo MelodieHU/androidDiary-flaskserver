@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#36648B</color>
+    <color name="colorPrimaryDark">#36648B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#bbafb4</color>
+    <color name="black">#343232</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="green">#388e8e</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <color name="colorPrimary_blue_theme">#F5FFFA</color>
+    <color name="colorPrimaryDark_blue_theme">#71935c</color>
+
+    <color name="colorPrimary_green_theme">#FFFFF0</color>
+    <color name="colorPrimaryDark_green_theme">#cdc673</color>
+
+    <color name="colorPrimary_berry_theme">#FFFAFA</color>
+    <color name="colorPrimaryDark_berry_theme">#D8BFD8</color>
+
+    <color name="colorPrimary_straw_theme">#FFF5EE</color>
+    <color name="colorPrimaryDark_straw_theme">#BC8F8F</color>
+</resources>
+

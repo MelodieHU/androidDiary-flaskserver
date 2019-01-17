@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10.8dp"
+            >
+
+            <TextView
+                android:id="@+id/main_tv_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:paddingTop="1dp"
+                android:text="Write Your Schedule"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/item_first"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/item_ll_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/main_ll_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="23dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/linear_style"
+                        >
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:id="@+id/main_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="40dp"
+                        android:text="What To Do?"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_rl_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="5dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/main_iv_edit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/pen"
+                        />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_rv_show_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <cc.trity.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/add_schedule_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        app:fab_addButtonColorNormal="#0f3353"
+        app:fab_addButtonSize="mini"
+        app:fab_expandDirection="up"
+        app:fab_labelStyle="@color/gray">
+
+        <cc.trity.floatingactionbutton.FloatingActionButton
+            android:id="@+id/scheduleadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/schedule"
+            app:fab_colorNormal="#388e8e"
+            app:fab_icon="@drawable/schedule"
+            app:fab_size="normal"
+            app:fab_title="schedule"
+
+            />
+
+
+    </cc.trity.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>

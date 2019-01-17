@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.xiwei.dairy.SignDate
+        android:id="@+id/signDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:paddingTop="@dimen/fab_icon_size_48"></com.example.xiwei.dairy.SignDate>
+
+    <Button
+        android:id="@+id/change_theme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/fab_icon_size_48"
+        android:layout_marginRight="@dimen/fab_icon_size_48"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/shape"
+        android:text="change theme"
+        />
+
+    <!--<include
+        android:id="@+id/include"
+        layout="@layout/calender_main" />-->
+
+
+</android.support.design.widget.CoordinatorLayout>

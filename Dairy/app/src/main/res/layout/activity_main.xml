@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+<!--    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:backgroundTint="@color/green"
+        app:srcCompat="@drawable/add"
+        app:fab_expandDirection="right"
+        app:fab_addButtonSize="mini"
+        />-->
+
+    <cc.trity.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/right_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:fab_expandDirection="up"
+        app:fab_addButtonSize="mini"
+        app:fab_addButtonColorNormal="#0f3353"
+        app:fab_labelStyle="@color/gray"
+        >
+
+        <cc.trity.floatingactionbutton.FloatingActionButton
+            android:id="@+id/signin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:fab_size="normal"
+            app:fab_icon = "@drawable/circle_orange"
+            app:fab_colorNormal="#0f3353"
+            app:fab_title="sign in"
+            />
+
+        <cc.trity.floatingactionbutton.FloatingActionButton
+            android:id="@+id/calender"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/pen"
+            app:fab_size="normal"
+            app:fab_icon = "@drawable/calender"
+            app:fab_colorNormal="#388e8e"
+            app:fab_title="calendar"
+            />
+
+        <cc.trity.floatingactionbutton.FloatingActionButton
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/schedule"
+            app:fab_size="normal"
+            app:fab_title="schedule"
+            app:fab_icon = "@drawable/schedule"
+            app:fab_colorNormal="#0f3353"
+
+            />
+
+        <cc.trity.floatingactionbutton.FloatingActionButton
+            android:id="@+id/pen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pen"
+            app:fab_colorNormal="#388e8e"
+            app:fab_icon = "@drawable/add"
+            app:fab_size="normal"
+            app:fab_title="diary"
+            />
+
+    </cc.trity.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>
